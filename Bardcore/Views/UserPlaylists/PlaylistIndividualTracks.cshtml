@@ -1,0 +1,51 @@
+﻿@model Bardcore.ViewModels.PlaylistIndividualTracksVM;
+@{
+    ViewData["Title"] = "PlaylistIndividualTracks";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Model.userPlaylist.PlaylistName</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Song Title
+            </th>
+            <th>
+                Artist
+            </th>
+            <td></td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var track in Model.songInfo)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(t => track.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(t => track.Artist)
+                </td>
+                <td>
+                    <audio controls>
+                        <source src="~/uploads/@Html.DisplayFor(t =>track.FileLocation)" type="audio/mpeg" />
+                        <source src="~/uploads/@Html.DisplayFor(t =>track.FileLocation)" type="audio/ogg" />
+                    </audio>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<script>
+    //prevents audio elements from playing more than one song at a time
+    document.addEventListener('play', function (e) {
+        var audios = document.getElementsByTagName('audio');
+        for (var i = 0, len = audios.length; i < len; i++) {
+            if (audios[i] != e.target) {
+                audios[i].pause();
+            }
+        }
+    }, true);
+</script>

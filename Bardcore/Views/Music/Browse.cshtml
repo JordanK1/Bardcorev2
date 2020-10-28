@@ -1,0 +1,73 @@
+﻿@using Bardcore.Models;
+@model IEnumerable<Bardcore.Models.SongInfo>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Upload</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Artist)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReleaseYear)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UploadDate)
+            </th>
+            <th>
+                Genre
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Artist)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReleaseYear)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UploadDate)
+            </td>       
+            <td>
+                @Html.DisplayFor(modelItem => item.GenreNavigation.Gname)
+            </td>
+            <td>
+                <audio controls>
+                    <source src="~/uploads/@Html.DisplayFor(modelItem => item.FileLocation)" type="audio/mp3" />
+                    <source src="~/uploads/@Html.DisplayFor(modelItem => item.FileLocation)" type="audio/ogg" />
+                    Error Displaying File
+                </audio>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<script>
+    //prevents audio elements from playing more than one song at a time
+    document.addEventListener('play', function (e) {
+        var audios = document.getElementsByTagName('audio');
+        for (var i = 0, len = audios.length; i < len; i++) {
+            if (audios[i] != e.target) {
+                audios[i].pause();
+            }
+        }
+    }, true);
+</script>
