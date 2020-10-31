@@ -63,3 +63,5 @@ C:\Users\Jordan\source\repos\Bardcore\Bardcore\obj\Debug\netcoreapp2.1\Razor\Vie
 C:\Users\Jordan\source\repos\Bardcore\Bardcore\obj\Debug\netcoreapp2.1\Razor\Views\UserPlaylists\Edit.cshtml.g.cs
 C:\Users\Jordan\source\repos\Bardcore\Bardcore\obj\Debug\netcoreapp2.1\Razor\Views\UserPlaylists\Index.cshtml.g.cs
 C:\Users\Jordan\source\repos\Bardcore\Bardcore\obj\Debug\netcoreapp2.1\Razor\Views\UserPlaylists\PlaylistIndividualTracks.cshtml.g.cs
+C:\Users\Jordan\source\repos\Bardcore\Bardcore\bin\Debug\netcoreapp2.1\System.Web.Services.dll
+C:\Users\Jordan\source\repos\Bardcore\Bardcore\obj\Debug\netcoreapp2.1\Razor\Views\UserPlaylists\Browse.cshtml.g.cs

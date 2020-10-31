@@ -45,14 +45,22 @@ namespace Bardcore.Controllers
         }
 
         // GET: UserPlaylists
+        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> Index()
         {
             var bardcoreContext = _context.UserPlaylist.Include(u => u.PlaylistCreatorNavigation);
             return View(await bardcoreContext.ToListAsync());
         }
-        
+
+        [Authorize]
+        public async Task<IActionResult> Browse()
+        {
+            var bardcoreContext = _context.UserPlaylist.Include(u => u.PlaylistCreatorNavigation);
+            return View(await bardcoreContext.ToListAsync());
+        }
 
         // GET: UserPlaylists/Details/5
+        [Authorize(Roles ="Administrator")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -72,6 +80,7 @@ namespace Bardcore.Controllers
         }
 
         // GET: UserPlaylists/Create
+        [Authorize]
         public IActionResult Create()
         {
             ViewData["PlaylistCreator"] = new SelectList(_context.UserProfile, "Userid", "DisplayName");
@@ -82,6 +91,7 @@ namespace Bardcore.Controllers
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
+        [Authorize]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("PlaylistId,PlaylistCreator,PlaylistName")] UserPlaylist userPlaylist)
         {
@@ -96,6 +106,7 @@ namespace Bardcore.Controllers
         }
 
         // GET: UserPlaylists/Edit/5
+        [Authorize(Roles ="Administrator")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -116,6 +127,7 @@ namespace Bardcore.Controllers
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
+        [Authorize(Roles ="Administrator")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("PlaylistId,PlaylistCreator,PlaylistName")] UserPlaylist userPlaylist)
         {
@@ -149,6 +161,7 @@ namespace Bardcore.Controllers
         }
 
         // GET: UserPlaylists/Delete/5
+        [Authorize(Roles ="Administrator")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -168,6 +181,7 @@ namespace Bardcore.Controllers
         }
 
         // POST: UserPlaylists/Delete/5
+        [Authorize(Roles ="Administrator")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

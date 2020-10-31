@@ -17,4 +17,10 @@
     <Folder Include="wwwroot\userPhotos\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="System.Web.Services">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\ReferenceAssemblies\Microsoft\Framework\MonoTouch\v1.0\System.Web.Services.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

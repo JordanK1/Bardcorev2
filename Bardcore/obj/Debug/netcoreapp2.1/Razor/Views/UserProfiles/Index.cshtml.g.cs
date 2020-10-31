@@ -66,7 +66,7 @@ using Bardcore.Models;
             WriteLiteral("\r\n<h2>Index</h2>\r\n\r\n<p>\r\n    ");
             EndContext();
             BeginContext(121, 37, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f6bdb0b6c92e4b36b7e2a2796b12009a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "624773d8156f49c8beee8fea3709a81b", async() => {
                 BeginContext(144, 10, true);
                 WriteLiteral("Create New");
                 EndContext();
@@ -256,7 +256,7 @@ using Bardcore.Models;
             WriteLiteral("\r\n            </td>\r\n            <td>\r\n                ");
             EndContext();
             BeginContext(1949, 57, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bfa00e45130434ab2b2d8cb2d3b6f34", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "abfedc2f42ae49c2b572421cd96ff170", async() => {
                 BeginContext(1998, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -291,7 +291,7 @@ using Bardcore.Models;
             WriteLiteral(" |\r\n                ");
             EndContext();
             BeginContext(2026, 63, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5422488a76fd4b3c855cb83258cd4777", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "86fd3d83a5644f09b6e45441d96bae10", async() => {
                 BeginContext(2078, 7, true);
                 WriteLiteral("Details");
                 EndContext();
@@ -326,7 +326,7 @@ using Bardcore.Models;
             WriteLiteral(" |\r\n                ");
             EndContext();
             BeginContext(2109, 61, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "70853f839e14469b8b586f055b8067b2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "50b36da436dc455c9c7e9090fdbe3304", async() => {
                 BeginContext(2160, 6, true);
                 WriteLiteral("Delete");
                 EndContext();

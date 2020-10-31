@@ -101,7 +101,7 @@ Write(Model.userPlaylist.PlaylistName);
             WriteLiteral("\r\n                </td>\r\n                <td>\r\n                    <audio controls>\r\n                        ");
             EndContext();
             BeginContext(814, 85, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("source", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "c535fab27d114790bc3c5ec90dc193c4", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("source", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "ba559791dfa741759d403eae68c8e789", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -127,7 +127,7 @@ AddHtmlAttributeValue("", 837, Html.DisplayFor(t =>track.FileLocation), 837, 40,
             WriteLiteral("\r\n                        ");
             EndContext();
             BeginContext(925, 84, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("source", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "d074ed4512f243e6804c15c5c5615989", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("source", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "06588c1cbadc4ae5ba8466f2d42fde69", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
