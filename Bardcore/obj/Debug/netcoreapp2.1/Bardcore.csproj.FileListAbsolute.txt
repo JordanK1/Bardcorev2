@@ -44,11 +44,6 @@ C:\Users\Jordan\source\repos\Bardcore\Bardcore\obj\Debug\netcoreapp2.1\Razor\Vie
 C:\Users\Jordan\source\repos\Bardcore\Bardcore\obj\Debug\netcoreapp2.1\Razor\Views\UserProfiles\Index.cshtml.g.cs
 C:\Users\Jordan\source\repos\Bardcore\Bardcore\obj\Debug\netcoreapp2.1\Razor\Views\RegisterAccount\SignUp.cshtml.g.cs
 C:\Users\Jordan\source\repos\Bardcore\Bardcore\obj\Debug\netcoreapp2.1\Razor\Views\UserProfiles\ProfileInfo.cshtml.g.cs
-C:\Users\Jordan\source\repos\Bardcore\Bardcore\obj\Debug\netcoreapp2.1\Razor\Views\SongInfoes\Create.cshtml.g.cs
-C:\Users\Jordan\source\repos\Bardcore\Bardcore\obj\Debug\netcoreapp2.1\Razor\Views\SongInfoes\Delete.cshtml.g.cs
-C:\Users\Jordan\source\repos\Bardcore\Bardcore\obj\Debug\netcoreapp2.1\Razor\Views\SongInfoes\Details.cshtml.g.cs
-C:\Users\Jordan\source\repos\Bardcore\Bardcore\obj\Debug\netcoreapp2.1\Razor\Views\SongInfoes\Edit.cshtml.g.cs
-C:\Users\Jordan\source\repos\Bardcore\Bardcore\obj\Debug\netcoreapp2.1\Razor\Views\SongInfoes\Index.cshtml.g.cs
 C:\Users\Jordan\source\repos\Bardcore\Bardcore\obj\Debug\netcoreapp2.1\Bardcore.csproj.CoreCompileInputs.cache
 C:\Users\Jordan\source\repos\Bardcore\Bardcore\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
 C:\Users\Jordan\source\repos\Bardcore\Bardcore\obj\Debug\netcoreapp2.1\Razor\Views\Music\Browse.cshtml.g.cs
@@ -65,3 +60,10 @@ C:\Users\Jordan\source\repos\Bardcore\Bardcore\obj\Debug\netcoreapp2.1\Razor\Vie
 C:\Users\Jordan\source\repos\Bardcore\Bardcore\obj\Debug\netcoreapp2.1\Razor\Views\UserPlaylists\PlaylistIndividualTracks.cshtml.g.cs
 C:\Users\Jordan\source\repos\Bardcore\Bardcore\bin\Debug\netcoreapp2.1\System.Web.Services.dll
 C:\Users\Jordan\source\repos\Bardcore\Bardcore\obj\Debug\netcoreapp2.1\Razor\Views\UserPlaylists\Browse.cshtml.g.cs
+C:\Users\Jordan\source\repos\Bardcore\Bardcore\obj\Debug\netcoreapp2.1\Razor\Views\UserPlaylistTracks\Create.cshtml.g.cs
+C:\Users\Jordan\source\repos\Bardcore\Bardcore\obj\Debug\netcoreapp2.1\Razor\Views\UserPlaylistTracks\Delete.cshtml.g.cs
+C:\Users\Jordan\source\repos\Bardcore\Bardcore\obj\Debug\netcoreapp2.1\Razor\Views\UserPlaylistTracks\Details.cshtml.g.cs
+C:\Users\Jordan\source\repos\Bardcore\Bardcore\obj\Debug\netcoreapp2.1\Razor\Views\UserPlaylistTracks\Edit.cshtml.g.cs
+C:\Users\Jordan\source\repos\Bardcore\Bardcore\obj\Debug\netcoreapp2.1\Razor\Views\UserPlaylistTracks\Index.cshtml.g.cs
+C:\Users\Jordan\source\repos\Bardcore\Bardcore\obj\Debug\netcoreapp2.1\Razor\Views\Shared\EditorTemplates\UserPlaylistTrack.cshtml.g.cs
+C:\Users\Jordan\source\repos\Bardcore\Bardcore\obj\Debug\netcoreapp2.1\Razor\Views\UserPlaylists\UserPlaylistTracks.cshtml.g.cs

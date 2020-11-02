@@ -1,0 +1,41 @@
+﻿@model IEnumerable<Bardcore.Models.UserPlaylistTrack>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Playlist)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Track)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Playlist.PlaylistName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Track.Name)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.PlaylistTrackId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.PlaylistTrackId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.PlaylistTrackId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

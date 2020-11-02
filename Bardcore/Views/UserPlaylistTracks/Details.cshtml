@@ -1,0 +1,30 @@
+﻿@model Bardcore.Models.UserPlaylistTrack
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>UserPlaylistTrack</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Playlist)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Playlist.PlaylistName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Track)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Track.Name)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.PlaylistTrackId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

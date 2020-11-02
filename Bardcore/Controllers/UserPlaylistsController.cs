@@ -99,11 +99,20 @@ namespace Bardcore.Controllers
             {
                 _context.Add(userPlaylist);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Browse));//original "(nameof(Index));"
             }
             ViewData["PlaylistCreator"] = new SelectList(_context.UserProfile, "Userid", "DisplayName", userPlaylist.PlaylistCreator);
             return View(userPlaylist);
         }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<ActionResult> AddUserPlaylistTrack([Bind("TrackID")] UserPlaylist userplaylist)
+        {
+            userplaylist.UserPlaylistTrack.Add(new UserPlaylistTrack());
+            return PartialView("PlaylistIndividualTracks", userplaylist);
+        }
+
 
         // GET: UserPlaylists/Edit/5
         [Authorize(Roles ="Administrator")]
