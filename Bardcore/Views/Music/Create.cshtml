@@ -15,7 +15,7 @@
         <form asp-action="Create" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
+                <label asp-for="Name" class="control-label">Title*</label>
                 <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
@@ -34,13 +34,13 @@
                 <span asp-validation-for="ReleaseYear" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="UploadDate" class="control-label"></label>
+                <label asp-for="UploadDate" class="control-label">Upload Date*</label>
                 <input asp-for="UploadDate" class="form-control" />
                 <span asp-validation-for="UploadDate" class="text-danger"></span>
             </div>
             
             <div>
-                <label for="audio">File Upload</label>
+                <label for="audio">File Upload*</label>
                 <input id="FileMusic" type="file" name="FileMusic" />
             </div>
 

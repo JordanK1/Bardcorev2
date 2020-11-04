@@ -105,14 +105,6 @@ namespace Bardcore.Controllers
             return View(userPlaylist);
         }
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<ActionResult> AddUserPlaylistTrack([Bind("TrackID")] UserPlaylist userplaylist)
-        {
-            userplaylist.UserPlaylistTrack.Add(new UserPlaylistTrack());
-            return PartialView("PlaylistIndividualTracks", userplaylist);
-        }
-
 
         // GET: UserPlaylists/Edit/5
         [Authorize(Roles ="Administrator")]

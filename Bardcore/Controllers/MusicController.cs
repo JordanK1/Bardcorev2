@@ -97,10 +97,10 @@ namespace Bardcore.Controllers
             {
                 _context.Add(songInfo);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Browse));
             }
             ViewData["Genre"] = new SelectList(_context.Genre, "GenreId", "Gname", songInfo.Genre);
-            return View(songInfo);
+            return View("~/Views/Music/Browse.cshtml");
         }
 
         // GET: Music/Edit/5

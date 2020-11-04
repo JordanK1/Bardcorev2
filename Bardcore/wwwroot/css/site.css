@@ -1,9 +1,50 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
 for details on configuring this project to bundle and minify static web assets. */
+@font-face {
+    font-family: Mothproof; src: url('Mothproof_Script.ttf');
+}
+
+@font-face {
+    font-family: Reey; src: url('Reey-Regular.otf');
+}
+
+@font-face {
+    font-family: Contra; src: url('contra.ttf');
+}
+
+* {
+    font-family: Contra;
+}
+
+a {
+    color: #1B0734;
+    font-weight: bold;
+}
+
 body {
-    background-color: #CDE961;
+    background: -webkit-linear-gradient(#CDE961,#83AC10);
+    background: -moz-linear-gradient(#CDE961,#83AC10);
+    background: -o-linear-gradient(#CDE961,#83AC10);
+    background: linear-gradient(#CDE961,#83AC10);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    min-height: 100vh;
+    min-width: 100vw;
     padding-top: 50px;
     padding-bottom: 20px;
+}
+
+.button {
+    background-color: #2f154f;
+    color: white;
+    font-size: 16pt;
+}
+
+.button:hover {
+    color: #CDE961;
 }
 
 /* Wrapping element */
@@ -13,13 +54,28 @@ body {
     padding-right: 15px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: Mothproof;
+    filter: drop-shadow(2px 2px 2px #698A0B)
+}
+
 .navbar {
     background-color: #1B0734;
     color: #FFFFFF;
 }
 
-a {
+p {
+    text-align: justify;
+}
+
+.signature {
+    font-family: Reey;
+    font-size: 36pt;
     color: #1B0734;
-    font-weight: bold;
+}
+
+.white-letter {
+    color: white;
+    font-family: Mothproof;
 }
 

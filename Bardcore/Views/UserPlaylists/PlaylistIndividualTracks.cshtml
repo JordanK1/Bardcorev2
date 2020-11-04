@@ -29,7 +29,7 @@
                     @Html.DisplayFor(t => track.Artist)
                 </td>
                 <td>
-                    <audio controls>
+                    <audio controls loop>
                         <source src="~/uploads/@Html.DisplayFor(t =>track.FileLocation)" type="audio/mpeg" />
                         <source src="~/uploads/@Html.DisplayFor(t =>track.FileLocation)" type="audio/ogg" />
                     </audio>
@@ -38,6 +38,8 @@
         }
     </tbody>
 </table>
+<a asp-controller="UserPlaylistTracks" asp-action="Create">Add Songs</a>
+<a asp-controller="UserPlaylistTracks" asp-action="Index">Edit or Delete Songs</a>
 <script>
     //prevents audio elements from playing more than one song at a time
     document.addEventListener('play', function (e) {

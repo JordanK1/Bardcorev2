@@ -14,24 +14,13 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="PlaylistCreator" class="control-label"></label>
-                <select asp-for="PlaylistCreator" class ="form-control" asp-items="ViewBag.PlaylistCreator"></select>
+                <select asp-for="PlaylistCreator" class="form-control" asp-items="ViewBag.PlaylistCreator"></select>
             </div>
             <div class="form-group">
                 <label asp-for="PlaylistName" class="control-label"></label>
                 <input asp-for="PlaylistName" class="form-control" />
                 <span asp-validation-for="PlaylistName" class="text-danger"></span>
             </div>
-
-            <!--Adding Songs Dynamically-->
-            <div id="userPlaylistTracksContainer">
-                @Html.EditorFor(model => model.UserPlaylistTrack)
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <input class="btn btn-default" type="button" id="btnAdd" value="Add track" />
-                </div>
-            </div>
-
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-default" />
             </div>

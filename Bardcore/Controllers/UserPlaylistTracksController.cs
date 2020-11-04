@@ -64,11 +64,11 @@ namespace Bardcore.Controllers
             {
                 _context.Add(userPlaylistTrack);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Browse", "UserPlaylists");
             }
             ViewData["PlaylistId"] = new SelectList(_context.UserPlaylist, "PlaylistId", "PlaylistName", userPlaylistTrack.PlaylistId);
             ViewData["TrackId"] = new SelectList(_context.SongInfo, "TrackId", "Name", userPlaylistTrack.TrackId);
-            return View(userPlaylistTrack);
+            return View("~/Views/UserPlaylists/Browse.cshtml");
         }
 
         // GET: UserPlaylistTracks/Edit/5
